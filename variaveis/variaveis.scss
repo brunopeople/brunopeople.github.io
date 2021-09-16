@@ -1,0 +1,110 @@
+// Variaveis de Cores 
+$cor-primaria: #22254b;
+$cor-secundaria: #373b69;
+
+
+//Variavel fonte
+$fonte-poppins: 'Poppins', sans-serif;
+
+//Variavel header
+$preenchimento: 1rem;
+$pano-de-fundo: tranparent;
+$borda: 2px solid;
+$cor: #fff;
+
+
+//search 
+    $cor-pesquisa: #7378c5;
+
+//movie
+$largura: 300px;
+$margem: 1rem;
+$raio-borda: 3px;
+$caixa-sombra: 0.2px 4px 5px rgba(0,0,0,0.1);
+
+
+//imagem movie
+$largura-filme: 100%;
+
+//info-movie
+$cor-filme: #eee;
+$preenchemento: 0.5rem 1rem 1rem;
+$espacamento-letras: 0.5px;
+
+
+//movie-info h3
+    $margem-top: 0;
+
+//movie-info span
+$cor-fundo-info-movie: var(--primary-color);
+$preenchemento-movie: 0.25rem 0.5rem;
+$raio-borda-movie-info: 3px;
+$fonte-peso-info: bold;
+
+//movie-info span.green
+$cor-movie-info-span: lightgreen;
+
+//movie-info- span.orange
+    $cor-movie-info-span-orange: orange;
+
+//movie-info span.red
+$cor-movie-info-span-red: red;
+
+//overview
+$esquerda: left;
+$direita: right;
+$borda: bottom;
+$cor-fundo-overview: #fff;
+$preenchemento-overview: 1rem;
+$altura-maxima: 100%;
+
+
+//tags
+
+$largura-tags: 80%;
+$margem-tags: 10px auto;
+
+//tag-highlight
+$cor-fundo-tag: red;
+
+//no results
+$cor-sem-resultado: white;
+
+//pagination
+$margem-paginacao: 10px 30px;
+$cor-paginacao: white;
+
+//page
+$preenchimento-pagina: 20px;
+
+//page.disabled
+$cor-page-disabled: grey;
+
+//overlay-a
+$cor-overlay-a: #818181;
+
+    // cor overlay
+    $branco: #f1f1f1;
+
+//overlay closebtn
+$topo: 20px;
+$direita-overlay:45px;
+$tamanho-fonte: 60px;
+
+// arroy-left
+$topo-arrow: 50%;
+$arrow-esquerda: 5%;
+
+//arrow-right
+$topo-arrow-right: 50%;
+$direita-arrow-right: 5%;
+
+// dots
+$preenchimento-dot: 5px 15px;
+$raio-borda-dot: 50%;
+$borda-dot: 5px solid var(--secondary-color);
+$branco-dot: white;
+$tamanho-fonte-dot: 20px;
+$peso-fonte-dot: 600;
+$dot-margem: 5px; 
+

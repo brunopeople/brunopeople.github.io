@@ -1,0 +1,178 @@
+@import "./variaveis/variaveis.scss";
+@import "./mixin/mixins.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#22254b;
+    --secondary-color: #373b69;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: $fonte-poppins;
+    margin: 0;
+}
+
+header{
+    @include header;
+}
+
+.search{
+    @include search;
+}
+
+.search:focus{
+    @include search-focus;
+}
+
+.search::placeholder{
+    @include search-placeholder;
+}
+
+main{
+    @include main;
+}
+
+.movie{
+    @include movie;
+}
+
+.movie-img{
+    width: 100%;
+}
+
+.movie-info{
+    @include movie-info;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    @include movie-info-span;
+}
+
+.movie-info span.green{
+    color: lightgreen;
+}
+
+.movie-info span.orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+.overview {
+    @include overview;
+}
+
+.movie:hover .overview{
+    transform: translateY();
+}
+
+#tags{
+    @include tags;
+}
+
+.tag{
+    @include tag;
+}
+
+.tag.highlight{
+    background-color: red;
+}
+
+.no-results{
+    color: white;
+}
+
+.pagination{
+    @include pagination;
+}
+
+.page{
+    padding: $preenchimento-pagina;
+    cursor: pointer;
+}
+
+.page.disabled{
+    cursor:not-allowed;
+    color:grey;
+}
+
+.current{
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    font-weight: 600;
+}
+
+.know-more{
+    @include know-more;
+}
+
+.overlay{
+    @include overlay;
+}
+
+.overlay-content{
+  @include overlay-content
+}
+
+.overlay a{
+    @include overlay-a;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: $branco;
+}
+
+.overlay .closebtn{
+   @include overlay-closebtn;
+}
+
+@media screen and(max-height: 450px){
+    .overlay a {font-size: 20px;}
+    .overlay .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.embed.hide{
+    display: none;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 40px;
+}
+
+.arrow.left-arrow{
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.arrow.right-arrow{
+    @include arrow-right;
+}
+
+.dots {
+    margin-top: 30px;
+}
+
+.dots .dot{
+    @include dot
+}
+
+.dots .dot.active{
+    border-radius: orange;
+}
